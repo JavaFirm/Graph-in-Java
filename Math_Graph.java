@@ -26,8 +26,6 @@ public class Math_Graph extends JPanel {
     private int pointWidth = 10;
     private int numberYDivisions = 6;
     private List<Double> scores;
-   // private int width = 800;
-    //private int heigth = 400;
     private int padding = 20;
 
     public Math_Graph(List<Double> scores) {
@@ -50,13 +48,11 @@ public class Math_Graph extends JPanel {
             graphPoints.add(new Point(x1, y1));
         }
 
-        // this is setting the background color to be white 
         g2.setColor(Color.WHITE);
         g2.fillRect(padding + labelPadding, padding, getWidth() - (2 * padding) - 
         		labelPadding, getHeight() - 2 * padding - labelPadding);
         g2.setColor(Color.BLUE);
 
-        // this creates the  hatch marks and grid lines for y axis.
         for (int i = 0; i < numberYDivisions + 1; i++) {
             int x0 = padding + labelPadding;
             int x1 = pointWidth + padding + labelPadding;
@@ -95,7 +91,7 @@ public class Math_Graph extends JPanel {
             }
         }
 
-        //  this is meant to create x and y axis so pay close attention
+   
         g2.drawLine(padding + labelPadding, getHeight() - padding - labelPadding, padding + labelPadding, padding);
         g2.drawLine(padding + labelPadding, getHeight() - padding - labelPadding, getWidth() -
         		padding, getHeight() - padding - labelPadding);
@@ -157,7 +153,7 @@ public class Math_Graph extends JPanel {
         int maxScore = 8;
         for (int i = 0; i < maxDataPoints; i++) {
             scores.add((double) random.nextDouble() * maxScore);
-        // scores.add((double) i);
+       
         }
         Math_Graph mainPanel = new Math_Graph(scores);
         mainPanel.setPreferredSize(new Dimension(800, 600));
