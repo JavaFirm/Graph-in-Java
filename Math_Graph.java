@@ -158,8 +158,9 @@ public class Math_Graph extends JPanel {
        
         }
         Math_Graph mainPanel = new Math_Graph(scores);
-        mainPanel.setPreferredSize(new Dimension(800, 600));
-        JFrame frame = new JFrame("Madonah's Graph");
+        mainPanel.setPreferredSize(new Dimension(700, 600));
+       
+        JFrame frame = new JFrame("Sample Graph");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(mainPanel);
         frame.pack();
