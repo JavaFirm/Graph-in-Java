@@ -157,12 +157,12 @@ public class Math_Graph extends JPanel {
         }
         Math_Graph mainPanel = new Math_Graph(scores);
         mainPanel.setPreferredSize(new Dimension(800, 600));
-        JFrame f = new JFrame("Madonah's Graph");
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.getContentPane().add(mainPanel);
-        f.pack();
-        f.setLocationRelativeTo(null);
-        f.setVisible(true);
+        JFrame frame = new JFrame("Madonah's Graph");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(mainPanel);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 
     public static void main(String[] args) {
