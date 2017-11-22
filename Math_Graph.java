@@ -80,7 +80,7 @@ public class Math_Graph extends JPanel {
                 int x1 = x0;
                 int y0 = getHeight() - padding - labelPadding;
                 int y1 = y0 - pointWidth;
-                if ((i % ((int) ((scores.size() / 8.0)) + 3)) == 0) { //my x - axes should start from 10,20,30 
+                if ((i % ((int) ((scores.size() / 8.0)) + 3)) == 0) { 
                     g2.setColor(gridColor);
                     g2.drawLine(x0, getHeight() - padding - labelPadding - 1 - pointWidth, x1, padding);
                     g2.setColor(Color.BLACK);
