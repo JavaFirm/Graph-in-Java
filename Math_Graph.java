@@ -1,4 +1,5 @@
 
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,6 +20,7 @@ public class Math_Graph extends JPanel {
 
     
     private int labelPadding = 12;
+    // change the line color to the best you want;
     private Color lineColor = new Color(255,255,254);
     private Color pointColor = new Color(255,0,255 );
     private Color gridColor = new Color(200, 200, 200, 200);
