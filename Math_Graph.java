@@ -1,5 +1,9 @@
 package com.madona.mathematics
-
+/*
+*
+*@author syombua
+*
+*/
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -15,12 +19,6 @@ import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-/*
-*
-*@author syombua
-*
-*/
-
 
 public class Math_Graph extends JPanel {
 
@@ -111,7 +109,9 @@ public class Math_Graph extends JPanel {
         g2.drawLine(padding + labelPadding, getHeight() - padding - labelPadding, padding + labelPadding, padding);
         g2.drawLine(padding + labelPadding, getHeight() - padding - labelPadding, getWidth() -
         		padding, getHeight() - padding - labelPadding);
-
+/*
+* 
+*/
         Stroke oldStroke = g2.getStroke();
         g2.setColor(lineColor);
         g2.setStroke(GRAPH_STROKE);
@@ -134,6 +134,11 @@ public class Math_Graph extends JPanel {
         }
     }
 
+/*
+ *  getting the min score using Math();
+ * getMinScore is an accessor method
+ * @return the minScore
+ */
 
 
     private double getMinScore() {
@@ -143,7 +148,12 @@ public class Math_Graph extends JPanel {
         }
         return minScore;
     }
-
+/*
+ *  getting the max score using Math();
+ * getMaxScore is an accessor method 
+ * @return the maxScore;
+ */
+	
     private double getMaxScore() {
         double maxScore = Double.MIN_VALUE;
         for (Double score : scores) {
@@ -151,7 +161,10 @@ public class Math_Graph extends JPanel {
         }
         return maxScore;
     }
-
+/*
+ *  setting scores
+ * 
+ */
     public void setScores(List<Double> scores) {
         this.scores = scores;
         invalidate();
@@ -161,7 +174,9 @@ public class Math_Graph extends JPanel {
     public List<Double> getScores() {
         return scores;
     }
-
+/*
+* creating the method createAndShowGui in the main method, where we create the frame too and pack it in the panel
+*/
     private static void createAndShowGui() {
         List<Double> scores = new ArrayList<>();
         Random random = new Random();
@@ -181,7 +196,9 @@ public class Math_Graph extends JPanel {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-
+/*
+* the main method
+*/
     public static void main(String[] args) {
       SwingUtilities.invokeLater(new Runnable() {
          public void run() {
