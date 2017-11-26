@@ -10,8 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * @author tmuthoka
- *
+ * @author syombua
  */
 
 public class Math_GraphTest {
