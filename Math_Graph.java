@@ -1,4 +1,4 @@
-
+package com.madona.mathematics
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -15,6 +15,12 @@ import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+/*
+*
+*@author syombua
+*
+*/
+
 
 public class Math_Graph extends JPanel {
 
