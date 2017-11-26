@@ -36,10 +36,18 @@ public class Math_Graph extends JPanel {
     private List<Double> scores;
     private int padding = 20;
 
+    	
+	/**
+	 * Math_Graph is a constructor method
+	 * 
+	 */
     public Math_Graph(List<Double> scores) {
         this.scores = scores;
     }
-
+/*
+ * 
+ * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
+ */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
